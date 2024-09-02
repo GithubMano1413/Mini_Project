@@ -38,8 +38,14 @@
     </types>
 
     <types>
-        <members>*</members>
+        <members>PublicFolder/Number_of_attendee_each_event_lkX</members>
+           <members>PublicFolder/New_Custom_Event_Report_2kV</members>
         <name>Report</name>
+    </types>
+
+    <types>
+        <members>MyFolder/sHSNOeMnLCeHPMhNrsZVDzBAvHTjOQ</members>
+        <name>Dashboard</name>
     </types>
 
        <types>

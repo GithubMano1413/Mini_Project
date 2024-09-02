@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>Event__c$Name</field>
+    </columns>
+    <columns>
+        <field>Event__c$Event_Status__c</field>
+    </columns>
+    <columns>
+        <field>Event__c$Event_Date__c</field>
+    </columns>
+    <filter>
+        <criteriaItems>
+            <column>Event__c$Event_Date__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>false</isUnlocked>
+            <operator>greaterOrEqual</operator>
+            <value>TODAY</value>
+        </criteriaItems>
+    </filter>
+    <format>Tabular</format>
+    <name>shows all upcoming events.</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Custom_Event__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>Event__c$CreatedDate</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>
